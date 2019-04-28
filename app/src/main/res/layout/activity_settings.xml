@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SettingsActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar_activity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_marginTop="20dp"
+        android:textSize="18sp"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:text="@string/account"/>
+
+    <Button
+        android:id="@+id/btnChangeName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/change_name"
+        android:gravity="left|center_vertical"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        android:background="@android:color/transparent"
+        android:paddingLeft="10dp"
+        android:onClick="changeName"/>
+
+    <Button
+    android:id="@+id/btnSignOut"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="@string/sign_out"
+        android:textColor="@android:color/holo_red_light"
+    android:gravity="left|center_vertical"
+    android:textAllCaps="false"
+    android:textSize="18sp"
+    android:background="@android:color/transparent"
+    android:paddingLeft="10dp"
+    android:onClick="signOut"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/light_gray"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:textSize="18sp"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:text="@string/preferences"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <!--<Button
+        android:id="@+id/tvDayNight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/day_night"
+        android:textColor="textColor"
+        android:gravity="left|center_vertical"
+        android:textSize="18sp"
+        android:background="@android:color/transparent"
+        android:paddingLeft="10dp" />-->
+
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

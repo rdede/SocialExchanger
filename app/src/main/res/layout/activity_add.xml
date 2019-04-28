@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MyCode.AddActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar_activity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"/>
+
+    <ProgressBar
+        android:id="@+id/pbLoading"
+        android:visibility="invisible"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:indeterminate="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"/>
+
+    <include
+        layout="@layout/content_add"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/pbLoading"
+        android:layout_above="@+id/navigation"/>
+
+</RelativeLayout>

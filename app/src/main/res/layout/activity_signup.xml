@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="18dp"
+    android:background="@color/colorPrimary">
+
+    <ScrollView
+        android:id="@+id/viewScroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="34sp"
+                android:text="@string/social_exchanger"
+                android:textColor="#000"
+                android:textStyle="bold"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="120dp"/>
+
+
+
+            <EditText
+                android:id="@+id/etName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName|textCapWords"
+                android:ems="10"
+                android:background="@android:color/transparent"
+                android:drawablePadding="12dp"
+                android:padding="8dp"
+                android:hint="@string/full_name"
+                android:maxLines="1"
+                android:drawableLeft="@drawable/ic_person"
+                android:layout_marginTop="50dp" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorPrimaryDark"
+                />
+
+            <EditText
+                android:id="@+id/etEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:ems="10"
+                android:background="@android:color/transparent"
+                android:drawablePadding="12dp"
+                android:padding="8dp"
+                android:hint="@string/username"
+                android:maxLines="1"
+                android:drawableLeft="@drawable/ic_email"
+                android:layout_marginTop="20dp" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorPrimaryDark"
+                />
+
+
+            <EditText
+                android:id="@+id/etPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:ems="10"
+                android:drawablePadding="12dp"
+                android:layout_margin="8dp"
+                android:hint="@string/password"
+                android:maxLines="1"
+                android:background="@android:color/transparent"
+                android:layout_marginTop="4dp"
+                android:drawableLeft="@drawable/ic_lock"
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorPrimaryDark"
+                android:layout_marginBottom="20dp"/>
+
+
+            <Button
+                android:id="@+id/btnSignup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_signup_button"
+                android:text="@string/sign_up"
+                android:textColor="@color/white"
+                android:textAllCaps="false"
+                android:textStyle="normal"
+                style="@style/Base.TextAppearance.AppCompat.Body1"
+                android:textSize="18sp"
+                android:layout_margin="16dp"
+                android:clickable="true"
+                android:onClick="signup"/>
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <ProgressBar
+        android:id="@+id/pbLoading"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:indeterminate="true"/>
+
+</LinearLayout>
